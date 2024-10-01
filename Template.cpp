@@ -30,6 +30,10 @@ const ll INFll = 1e18 + 10;
         };
         
         priority_queue<string,vector<string>,decltype(compare)> pq(compare);
+----------------------------------------------------------------------------------------
+        for (int i = 0; i < arr.size(); i++) {
+            arr[i] = ((arr[i] % k) + k) % k; // Ensure non-negative results
+        }
 **/
 int gcd(int a, int b) {
     if (b == 0) return a;
